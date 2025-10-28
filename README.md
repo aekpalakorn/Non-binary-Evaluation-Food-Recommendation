@@ -6,7 +6,7 @@ This repository contains the Jupyter notebooks and source codes used for reprodu
 
 * **Problem:** Traditional recommender system evaluation (binary relevance or simple right/wrong) is broken for complex sequential tasks like next-basket food recommendation (NBR). A close substitute (rice vs. noodles) should count for something!
 * **Solution:** We adapted existing NLP similarity metrics (like ROUGE and BERTScore) to introduce new **Non-Binary Evaluation Metrics** for NBR that assign partial credit for relevant, similar recommendations.
-* **Human Studies:** We ran two comprehensive online user studies focusing on next-meal food recommendations, asking participants to:
+* **User Studies:** We ran two comprehensive online user studies focusing on next-meal food recommendations, asking participants to:
     1.  Rate the **Substitution Quality** of recommended items (e.g., how good a substitute is it?).
     2.  Rate their overall **Preference/Utility** for the recommended basket.
 * **Result:** Our non-binary metrics showed a **significantly higher correlation** with the **user-reported satisfaction and utility scores** than standard binary metrics.
