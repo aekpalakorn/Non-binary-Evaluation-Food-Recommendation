@@ -1,5 +1,7 @@
 # Non-binary Evaluation of Next-basket Food Recommendation
 
+[![Journal Paper](https://img.shields.io/badge/Journal-UMUAI-004080.svg)](https://link.springer.com/article/10.1007/s11257-023-09369-8)
+
 This repository contains the Jupyter notebooks and source codes used for reproducing the results published in our [paper](https://link.springer.com/article/10.1007/s11257-023-09369-8), **"Non-binary Evaluation of Next-basket Food Recommendation"** (User Modeling and User-Adapted Interaction, 2024).
 
 ## TL;DR
