@@ -2,13 +2,15 @@
 
 This repository contains the Jupyter notebooks and source codes used for reproducing the results published in our [paper](https://link.springer.com/article/10.1007/s11257-023-09369-8), **"Non-binary Evaluation of Next-basket Food Recommendation"** (User Modeling and User-Adapted Interaction, 2024).
 
-Please contact [Liu Yue](mailto:yueliu@smu.edu.sg?cc=liuyue715@hotmail.com) if you have any questions or problems.
+## TL;DR
 
-### Important Note on Data and Model Files
-
-* The raw food consumption data used in the study is based on the anonymized MyFitnessPal public food diary [dataset](https://www.researchgate.net/publication/324601551_MyFitnessPal_Food_Diary_Dataset) (Weber and Achananuparp 2016). The specific processed, structured, and cleaned data files used directly in the notebooks are not included in this repository. Users must prepare their own version of this dataset for full replication.
-* The package `fpmc` refers to a custom implementation of the Factorizing Personalized Markov Chains model adapted for this work.
-* Notebooks assume the raw/processed data files are placed in a **`/data/`** directory (or a mock dataset structured similarly to the original).
+* **Problem:** Traditional recommender system evaluation (binary relevance or simple right/wrong) is broken for complex sequential tasks like next-basket food recommendation (NBR). A close substitute (rice vs. noodles) should count for something!
+* **Solution:** We adapted existing NLP similarity metrics (like ROUGE and BERTScore) to introduce new **Non-Binary Evaluation Metrics** for NBR that assign partial credit for relevant, similar recommendations.
+* **Human Studies:** We ran two comprehensive online user studies focusing on next-meal food recommendations, asking participants to:
+    1.  Rate the **Substitution Quality** of recommended items (e.g., how good a substitute is it?).
+    2.  Rate their overall **Preference/Utility** for the recommended basket.
+* **Result:** Our non-binary metrics showed a **significantly higher correlation** with the **user-reported satisfaction and utility scores** than standard binary metrics.
+* **Conclusion:** The findings indicate that our non-binary methods are essential for building and evaluating NBR systems that truly reflect user behavior and utility.
 
 ## Requirements
 The notebooks have been tested in Python 3.7 via Anaconda with the following packages:
@@ -21,6 +23,11 @@ The notebooks have been tested in Python 3.7 via Anaconda with the following pac
 
 See requirements.txt for a complete list.
 
+### Important Note on Data and Model Files
+
+* The raw food consumption data used in the study is based on the anonymized MyFitnessPal public food diary [dataset](https://www.researchgate.net/publication/324601551_MyFitnessPal_Food_Diary_Dataset) (Weber and Achananuparp 2016). The specific processed, structured, and cleaned data files used directly in the notebooks are not included in this repository. Users must prepare their own version of this dataset for full replication.
+* The package `fpmc` refers to a custom implementation of the Factorizing Personalized Markov Chains model adapted for this work.
+* Notebooks assume the raw/processed data files are placed in a **`/data/`** directory (or a mock dataset structured similarly to the original).
 
 ## Pipeline
 
